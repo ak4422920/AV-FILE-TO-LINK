@@ -17,14 +17,14 @@ BOT_USERNAME = environ.get("BOT_USERNAME", 'ak_filestreambot') # without @
 # Admins, Channels & Users
 BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-100')) # admin your channel in stream 
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-100')) # admin your channel in users log 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()] # 3567788, 678899, 5889467
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '72518 98668').split()] # 3567788, 678899, 5889467
 OWNER_USERNAME = environ.get("OWNER_USERNAME", 'AK_ownerbot') # without @ 
 
 # pics information
 PICS = environ.get('PICS', 'https://envs.sh/dPl.jpg')
 
 # channel link information
-CHANNEL = environ.get('CHANNEL', 'https://t.me/')
+CHANNEL = environ.get('CHANNEL', 'https://t.me/cineoriginals')
 SUPPORT = environ.get('SUPPORT', 'http://t.me/')
 
 #Dont Remove My Credit @AV_BOTz_UPDATE 
