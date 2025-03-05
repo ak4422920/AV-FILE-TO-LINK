@@ -9,23 +9,23 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'Webavbot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '29171167'))
+API_HASH = environ.get('API_HASH', '7ea2149629e445936619f06a3c0dc716')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
-BOT_USERNAME = environ.get("BOT_USERNAME", 'ak_filestreambot') # without @ 
+BOT_USERNAME = environ.get("BOT_USERNAME", 'Thesongoku_bot') # without @ 
 
 # Admins, Channels & Users
-BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-100')) # admin your channel in stream 
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-100')) # admin your channel in users log 
+BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-1002265782697')) # admin your channel in stream 
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-1002190352334')) # admin your channel in users log 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7251898668').split()] # 3567788, 678899, 5889467
 OWNER_USERNAME = environ.get("OWNER_USERNAME", 'AK_ownerbot') # without @ 
 
 # pics information
-PICS = environ.get('PICS', 'https://envs.sh/dPl.jpg')
+PICS = environ.get('PICS', 'https://envs.sh/PyG.jpg')
 
 # channel link information
 CHANNEL = environ.get('CHANNEL', 'https://t.me/cineoriginals')
-SUPPORT = environ.get('SUPPORT', 'http://t.me/')
+SUPPORT = environ.get('SUPPORT', 'https://t.me/+U9ABfC7hu1EyZjU1')
 
 #Dont Remove My Credit @AV_BOTz_UPDATE 
 #This Repo Is By @BOT_OWNER26 
@@ -37,7 +37,7 @@ BAN_CHNL = [int(ban_chal) if id_pattern.search(ban_chal) else ban_chal for ban_c
 BAN_ALERT = environ.get('BAN_ALERT' , '<b>ʏᴏᴜʀ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ.ᴄᴏɴᴛᴀᴄᴛ [ ᴏᴡɴᴇʀ](https://telegram.me/AK_OWNERBOT) ᴛᴏ ʀᴇsᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇ!!</b>')
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://file:file@cluster0.ijg6i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 
 # fsub  information
@@ -61,7 +61,7 @@ SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 WORKERS = int(getenv('WORKERS', '4'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'ak_filestreambot'))
+name = str(environ.get('name', 'Thesongoku_bot'))
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
